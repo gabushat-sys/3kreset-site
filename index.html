@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ЗАЩИТА ОТ КЕША -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>3KRESET — Содержание выбирает форму</title>
+<meta name="description" content="3KRESET — Содержание выбирает форму.  Жанр — лишь следствие. Альбомы получаются разными: форма всегда следует за содержанием.">
+<meta property="og:title" content="3KRESET — Содержание выбирает форму">
+<meta property="og:description" content="Я не выбираю жанр — он рождается из сути. Поэтому альбомы получаются разными: форма всегда следует за содержанием, а не диктует его.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/sideways.webp">
+<meta name="theme-color" content="#090909">
+<!-- Безопасность (CSP обновлен для Яндекс.Метрики) -->
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://3kreset.com/">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'unsafe-inline' fonts.googleapis.com; font-src fonts.gstatic.com; img-src 'self' data: https://mc.yandex.ru; script-src 'unsafe-inline' 'self' https://mc.yandex.ru; connect-src 'self' https://mc.yandex.ru;">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){
+m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108830788', 'ym');
+ym(108830788, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/108830788" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "MusicGroup",
+"name": "3KRESET",
+"description": "Содержание выбирает форму.  Жанр — лишь следствие.",
+"image": "assets/blood-steel.webp",
+"album": [
+{
+"@type": "MusicAlbum",
+"name": "BLOOD & STEEL",
+"datePublished": "2026-05-01",
+"genre": ["Nu-metal", "Rap-rock"]
+},
+{
+"@type": "MusicRecording",
+"name": "Sideways",
+"datePublished": "2026-06-26",
+"genre": "Atmospheric Rock"
+}
+]
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+--text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+--text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+--text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+--text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+--text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+--text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.8rem);
+--text-hero: clamp(3rem, 0.7rem + 7vw, 7rem);
+--space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+--space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+--space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+--radius-sm: 0.375rem; --radius-md: 0.75rem; --radius-lg: 1.25rem; --radius-xl: 1.75rem;
+--color-bg: #090909;
+--color-surface: #101010;
+--color-surface-2: #171717;
+--color-border: rgba(255,255,255,0.1);
+--color-text: #f4efe9;
+--color-text-muted: #b8ada2;
+--color-text-faint: #7f756d;
+--color-primary: #ff5a1f;
+--color-primary-2: #ff8f4a;
+--color-accent: #f0d0b1;
+--shadow-md: 0 12px 30px rgba(0,0,0,0.28);
+--font-display: 'Oswald', Impact, sans-serif;
+--font-body: 'Inter', Arial, sans-serif;
+--content: 1160px;
+--transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body {
+margin: 0;
+min-height: 100vh;
+font-family: var(--font-body);
+font-size: var(--text-base);
+font-weight: 400;
+line-height: 1.72;
+color: var(--color-text);
+background:
+radial-gradient(circle at top, rgba(255,90,31,0.18), transparent 32%),
+linear-gradient(180deg, #070707 0%, #0b0b0b 35%, #090909 100%);
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-smooth: always;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+.skip-link { position: absolute; left: -9999px; top: auto; }
+.skip-link:focus { left: 1rem; top: 1rem; z-index: 2000; background: #fff; color: #000; padding: 0.75rem 1rem; border-radius: 0.5rem; }
+.container { width: min(calc(100% - 2rem), var(--content)); margin-inline: auto; }
+/* Header */
+.site-header {
+position: sticky; top: 0; z-index: 1000;
+backdrop-filter: blur(14px);
+background: rgba(9, 9, 9, 0.72);
+border-bottom: 1px solid var(--color-border);
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 74px; }
+.logo { display: inline-flex; align-items: center; gap: var(--space-3); font-family: var(--font-display); letter-spacing: 0.12em; text-transform: uppercase; font-size: var(--text-lg); flex-direction: column; align-items: flex-start; }
+.logo-title { font-weight: 500; }
+.logo-subtitle { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.8; margin-top: var(--space-2); font-family: var(--font-body); text-transform: none; letter-spacing: normal; }
+.logo-mark { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.14); display: grid; place-items: center; color: var(--color-primary); box-shadow: inset 0 0 24px rgba(255,90,31,0.12); }
+.nav { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; justify-content: flex-end; }
+.nav a { min-height: 44px; display: inline-flex; align-items: center; padding: 0 var(--space-4); font-size: var(--text-sm); color: var(--color-text-muted); border-radius: 999px; transition: all var(--transition); }
+.nav a:hover, .nav a:focus-visible { color: var(--color-text); background: rgba(255,255,255,0.05); outline: none; }
+/* HERO SECTION */
+.hero { position: relative; isolation: isolate; overflow: clip; min-height: 92vh; display: grid; align-items: center; }
+.hero::before {
+content: ""; position: absolute; inset: 0;
+background:
+linear-gradient(90deg, rgba(5,5,5,0.92) 0%, rgba(5,5,5,0.75) 45%, rgba(5,5,5,0.5) 100%),
+url('assets/sideways.webp') center top / cover no-repeat;
+z-index: -2; transform: scale(1.04);
+}
+.hero::after {
+content: ""; position: absolute; inset: 0;
+background:
+radial-gradient(circle at 70% 22%, rgba(255,129,71,0.15), transparent 25%),
+linear-gradient(180deg, rgba(9,9,9,0.2) 0%, rgba(9,9,9,0.7) 70%, var(--color-bg) 100%);
+z-index: -1;
+}
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr); gap: var(--space-8); align-items: end; padding: clamp(var(--space-16), 10vw, 8rem) 0 var(--space-16); }
+.eyebrow { display: inline-flex; align-items: center; gap: var(--space-2); padding: 0.45rem 0.8rem; border-radius: 999px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.04); color: var(--color-accent); font-size: var(--text-xs); letter-spacing: 0.16em; text-transform: uppercase; }
+.hero h1 { margin: var(--space-5) 0 var(--space-4); font-family: var(--font-display); font-size: var(--text-hero); font-weight: 500; line-height: 0.92; letter-spacing: 0.06em; text-transform: uppercase; max-width: 10ch; text-wrap: balance; }
+.hero .accent { color: var(--color-primary-2); text-shadow: 0 0 36px rgba(255,90,31,0.22); }
+.hero p { max-width: 58ch; color: var(--color-text-muted); margin: 0 0 var(--space-6); }
+.btn { min-height: 48px; padding: 0.85rem 1.1rem; border-radius: 999px; border: 1px solid rgba(255,255,255,0.14); display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; font-size: var(--text-sm); font-weight: 600; letter-spacing: 0.03em; transition: transform var(--transition), background var(--transition), border-color var(--transition), color var(--transition); }
+.btn:hover, .btn:focus-visible { transform: translateY(-1px); outline: none; }
+.btn-primary { background: linear-gradient(180deg, var(--color-primary-2), var(--color-primary)); color: #120804; border-color: transparent; box-shadow: 0 10px 30px rgba(255, 90, 31, 0.26); }
+.btn-secondary { background: rgba(255,255,255,0.04); color: var(--color-text); }
+.hero-actions { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+.hero-side { justify-self: end; width: min(100%, 360px); }
+.signal-card { border: 1px solid var(--color-border); background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); box-shadow: var(--shadow-md); border-radius: var(--radius-xl); padding: var(--space-6); backdrop-filter: blur(8px); }
+.signal-card .label { color: var(--color-text-faint); text-transform: uppercase; letter-spacing: 0.12em; font-size: var(--text-xs); }
+.signal-card strong { display: block; margin-top: var(--space-2); font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 500; line-height: 1; letter-spacing: 0.04em; }
+.signal-grid { margin-top: var(--space-5); display: grid; gap: var(--space-3); }
+.signal-row { display: flex; justify-content: space-between; gap: var(--space-4); color: var(--color-text-muted); border-top: 1px solid rgba(255,255,255,0.08); padding-top: var(--space-3); }
+/* Sections */
+main { position: relative; z-index: 1; }
+.section { padding: clamp(var(--space-12), 7vw, var(--space-24)) 0; }
+.section-head { display: grid; gap: var(--space-3); margin-bottom: var(--space-8); max-width: 760px; }
+.section-head h2 { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 500; line-height: 0.98; letter-spacing: 0.06em; text-transform: uppercase; margin: 0; }
+.section-head p { color: var(--color-text-muted); margin: 0; }
+.section-kicker { color: var(--color-text-faint); text-transform: uppercase; letter-spacing: 0.12em; font-size: var(--text-xs); }
+/* Releases Grid */
+.releases-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6); }
+.release-card { overflow: hidden; display: flex; flex-direction: column; height: 100%; border: 1px solid var(--color-border); background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); box-shadow: var(--shadow-md); border-radius: var(--radius-xl); }
+.release-visual { aspect-ratio: 1 / 1; background: #0b0b0b; overflow: hidden; position: relative; }
+.release-body { padding: var(--space-6); display: grid; gap: var(--space-4); flex-grow: 1; grid-template-rows: auto auto 1fr auto; }
+.release-body h3 { margin: 0; font-family: var(--font-display); font-size: var(--text-xl); font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; line-height: 1; }
+.release-body p { margin: 0; color: var(--color-text-muted); }
+.release-meta { color: var(--color-text-faint); text-transform: uppercase; letter-spacing: 0.12em; font-size: var(--text-xs); }
+.release-tags { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.tag { padding: 0.45rem 0.7rem; border-radius: 999px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); font-size: var(--text-xs); color: var(--color-text-muted); }
+.countdown { display: inline-flex; align-items: center; gap: var(--space-2); padding: 0.55rem 0.85rem; border-radius: 999px; background: rgba(255,90,31,0.12); border: 1px solid rgba(255,90,31,0.18); color: var(--color-accent); font-size: var(--text-sm); width: fit-content; }
+.card-actions { display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: auto; }
+.btn-toggle-lyrics, .btn-toggle-about { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); color: var(--color-text); font-size: var(--text-sm); cursor: pointer; transition: all var(--transition); }
+.btn-toggle-lyrics:hover, .btn-toggle-about:hover { background: rgba(255,255,255,0.12); }
+.btn-toggle-lyrics svg { width: 16px; height: 16px; transition: transform 0.3s ease; }
+.btn-toggle-lyrics.active svg { transform: rotate(180deg); }
+.streaming-link { display: block; margin-top: var(--space-4); color: var(--color-text-faint); font-size: var(--text-sm); transition: color var(--transition); }
+.streaming-link:hover { color: var(--color-primary); }
+.release-lyrics, .release-about { display: none; }
+/* Manifest */
+.manifest { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr); gap: var(--space-8); align-items: stretch; }
+.manifest-additional { color: var(--color-text-muted); margin: 0; }
+/* Footer */
+footer { border-top: 1px solid var(--color-border); padding: var(--space-8) 0 var(--space-12); color: var(--color-text-faint); }
+.footer-inner { display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; }
+.footer-links { display: flex; gap: 1rem; }
+.footer-links a:hover { color: var(--color-text); }
+/* --- Стили для аккордеона в модалке --- */
+.modal-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.modal-accordion-item {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.02);
+    transition: background var(--transition);
+}
+
+.modal-accordion-item:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.modal-accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4) var(--space-5);
+    background: transparent;
+    border: none;
+    color: var(--color-text-muted);
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    min-height: 56px; /* Удобная зона клика */
+    transition: color var(--transition);
+}
+
+.modal-accordion-header:hover,
+.modal-accordion-header.active {
+    color: var(--color-primary);
+}
+
+.modal-accordion-header .icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    line-height: 1;
+}
+
+.modal-accordion-header.active .icon {
+    transform: rotate(180deg);
+}
+
+.modal-accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+    opacity: 0;
+    padding: 0 var(--space-5);
+}
+
+.modal-accordion-body.open {
+    opacity: 1;
+    padding-bottom: var(--space-5);
+    /* max-height устанавливается через JS для точной анимации */
+}
+
+.modal-accordion-body pre {
+    margin: 0;
+    white-space: pre-wrap;
+    font-family: var(--font-body);
+    color: #ddd0c1;
+    font-size: var(--text-sm);
+    line-height: 1.85;
+    padding-top: var(--space-2);
+}
+
+.modal-accordion-body h4,
+.modal-accordion-body p {
+    margin-bottom: var(--space-3);
+}
+
+/* MODAL */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(4px); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; padding: var(--space-6); }
+.modal-overlay.active { opacity: 1; visibility: visible; }
+.modal-window { background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: var(--space-8); max-width: 700px; width: 100%; max-height: 85vh; overflow-y: auto; position: relative; transform: translateY(20px); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); color: var(--color-text); line-height: 1.72; display: flex; flex-direction: column; gap: var(--space-4); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-smooth: always; text-rendering: optimizeLegibility; }
+.modal-overlay.active .modal-window { transform: translateY(0); }
+.modal-close { position: absolute; top: var(--space-4); right: var(--space-4); background: none; border: none; color: var(--color-text-faint); font-size: 2rem; cursor: pointer; line-height: 1; padding: 0; transition: color var(--transition); z-index: 10; }
+.modal-close:hover { color: var(--color-text); }
+.modal-title { margin: 0; padding-right: var(--space-8); font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.04em; font-size: var(--text-xl); color: var(--color-text); }
+.modal-tabs { display: flex; gap: var(--space-2); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-2); overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.modal-tabs.hidden { display: none; }
+.modal-tabs::-webkit-scrollbar { display: none; }
+.modal-tab { background: none; border: none; color: var(--color-text-faint); padding: var(--space-2) var(--space-3); font-size: var(--text-sm); cursor: pointer; white-space: nowrap; border-bottom: 2px solid transparent; transition: all var(--transition); min-height: 44px; display: flex; align-items: center; }
+.modal-tab:hover { color: var(--color-text); }
+.modal-tab.active { color: var(--color-primary); border-bottom-color: var(--color-primary); }
+.modal-content pre { margin: 0; white-space: pre-wrap; font-family: var(--font-body); color: var(--color-text); font-size: var(--text-sm); line-height: 1.72; font-weight: 400; -webkit-font-smoothing: antialiased; }
+.modal-content h4 { margin: 0 0 var(--space-2); color: var(--color-text); font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.04em; }
+.modal-content p { margin: 0 0 var(--space-3); }
+.modal-content strong { color: var(--color-text); }
+
+/* Исправление размытости шрифтов в модалках */
+.modal-accordion-body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
+    text-rendering: optimizeLegibility;
+}
+
+.modal-accordion-header {
+    font-weight: 500; /* вместо возможного bold */
+}
+@media (max-width: 980px) {
+.hero-grid, .manifest, .releases-grid { grid-template-columns: 1fr; }
+.hero-side { justify-self: start; width: 100%; }
+}
+@media (max-width: 720px) {
+.header-inner { min-height: auto; padding: 0.9rem 0; align-items: flex-start; flex-direction: column; }
+.nav { width: 100%; justify-content: flex-start; }
+.hero { min-height: auto; }
+.hero-grid { padding-top: 6.5rem; }
+.hero h1 { max-width: none; }
+.btn { width: 100%; }
+.modal-window { padding: var(--space-6); max-height: 90vh; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к контенту</a>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="#top" aria-label="3KRESET home">
+<span class="logo-mark" aria-hidden="true">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 4.2-2.8 7.9-7 10-4.2-2.1-7-5.8-7-10V6l7-4Z"></path><path d="M8.5 15.5 15.5 8.5"></path><path d="M9 8.5h6v6"></path></svg>
+</span>
+<span class="logo-title">3KRESET</span>
+<span class="logo-subtitle">Содержание выбирает форму.  Жанр — лишь следствие</span>
+</a>
+<nav class="nav" aria-label="Основная навигация">
+<a href="#releases">Релизы</a>
+<a href="#about">О проекте</a>
+<a href="#contact">Контакты</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<!-- HERO SECTION (Стратегия 1: Актуальный релиз) -->
+<section class="hero" id="top">
+<div class="container hero-grid">
+<div>
+<span class="eyebrow">Новый сингл • 26 июня 2026</span>
+<h1>SIDEWAYS<br><span class="accent">INNER LIGHT</span></h1>
+<p>Интроспективный рок-трек, работающий как мантра внутренней стойкости. Я падаю, теряю опору, но свет внутри не отнять.</p>
+<div class="hero-actions">
+<a href="https://band.link/nMxgW" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-primary">Слушать Sideways</a>
+<a href="#releases" class="btn btn-secondary">Все релизы</a>
+</div>
+</div>
+<aside class="hero-side">
+</aside>
+</div>
+</section>
+<!-- RELEASES SECTION -->
+<section class="section" id="releases">
+<div class="container">
+<div class="section-head">
+<span class="section-kicker">Дискография</span>
+<h2>Релизы</h2>
+<p>Слушать на всех платформах</p>
+</div>
+<div class="releases-grid">
+<!-- 3K TO DEATH -->
+<article class="release-card">
+<div class="release-visual">
+<img src="assets/3k_to_death.webp" alt="Обложка альбома 3K TO DEATH" width="1024" height="1024" loading="lazy">
+</div>
+<div class="release-body">
+<div class="release-meta">8 апреля 2026</div>
+<h3>3K TO DEATH</h3>
+<p>Это срыв, ярость и попытка вырваться из состояния внутреннего коллапса через предельное усилие</p>
+<div class="release-tags">
+<span class="tag">Nu-metal</span>
+<span class="tag">Rap-rock</span>
+<span class="tag">Aggressive</span>
+</div>
+<div class="release-lyrics" data-title="3K TO DEATH">
+<pre>Another... sleepless... night...
+Shadows bleed on the wall...
+War inside my skull...
+"...No more..."
+GET THE HELL UP!
+
+Lost so deep the pain can't touch the floor
+Staring through the glass like horror film noir
+You're the villain in the frame you made
+Didn't guard your heart, didn't guard your days
+Prayed for someone to kill the lights
+Phone lights up: "I'm tired. I'm already gone."
+Then a spark—not a prayer, a cold verdict:
+"You want the end? Burn the rot inside—MAX IT OUT!"
+
+First hundred steps—concrete in my bones
+Lungs shredded into frozen stone
+Every stride—a debt to the one you failed
+Knees on fire, blood-iron taste in your mouth
+"You wanted to vanish, actor? PLAY THE PART!"
+"Don't whisper—SCREAM!"
+
+RUN YOUR THREE-K TO DEATH!
+Every meter tears your throat and chest!
+You say this life means nothing? BURN IT TO THE GROUND!
+BURN IT TO THE GROUND!
+RUN YOUR THREE-K TO DEATH!
+
+Screw the clock—how many minutes left?
+You wanted to die? THEN DIE IN THE FIGHT!
+And then...
+BREATHE ANEW!
+BREATHE!
+BREATHE!
+
+Halfway—again, again
+World shrinks to a razor's edge
+Veins hammering tick-tick-tick in your head
+"I've got nothing left..."
+And suddenly—
+IT MATTERS!
+You roar into the void
+Tearing the foundation from your soul
+HEY!
+
+RUN YOUR THREE-K TO DEATH!
+Every meter tears your throat and chest!
+You say this life means nothing? BURN IT TO THE GROUND!
+BURN IT TO THE GROUND!
+RUN YOUR THREE-K TO DEATH!
+Screw the clock—how many minutes left?
+You wanted to die? THEN DIE IN THE FIGHT!
+And then...
+BREATHE ANEW!
+BREATHE!
+BREATHE!
+
+Finish line ain't no ribbon—it's the edge
+You faced it... didn't fall
+Collapse into the grass
+
+Gray smoke, city breath
+First whisper: "I'm alive..."
+Every breath—raspy steel
+But in your eyes—a spark
+Today you buried the ghost
+Tomorrow—rise
+SOMEONE NEW
+"So get the fuck up."
+
+RUN YOUR THREE-K TO DEATH!
+Every meter tore your throat and chest!
+You wanted to die—but at the edge you saw:
+"I WANT MORE!"
+"I WANT TO LIVE!"
+RUN YOUR THREE-K TO DEATH!
+Let the phoenix rise from ash and sweat!
+You proved it to yourself—so now you live!
+START YOUR NEW LIFE!
+RUN!
+
+...I'm alive…</pre>
+</div>
+<div class="card-actions">
+<button class="btn-toggle-lyrics" aria-expanded="false">
+<span>Текст песни</span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+</div>
+<a href="https://band.link/XyCKH" target="_blank" rel="noopener noreferrer nofollow" class="streaming-link">🎧 https://band.link/XyCKH</a>
+</div>
+</article>
+<!-- BLOOD & STEEL -->
+<article class="release-card">
+<div class="release-visual">
+<img src="assets/blood-steel.webp" alt="Обложка альбома BLOOD & STEEL" width="1024" height="1024" loading="lazy">
+</div>
+<div class="release-body">
+<div class="release-meta">1 мая 2026</div>
+<h3>BLOOD & STEEL</h3>
+<p>Макси-сингл. Три главы внутренней войны. Путь от яростного крика к осознанной мощи. История о том, как плоть становится сталью</p>
+<div class="release-tags">
+<span class="tag">Nu-metal</span>
+<span class="tag">Rap-rock</span>
+<span class="tag">Motivational</span>
+</div>
+<!-- Единый контейнер для всех текстов (скрыт по умолчанию через CSS) -->
+<div class="release-lyrics" data-title="BLOOD & STEEL" data-has-tabs="true">
+
+    <!-- Версия 1 -->
+    <div class="lyrics-version" data-tab-name="Blood & Steel">
+        <pre>Another empty can, another wasted night
+Chasing cheap dopamine, tryna feel alive
+You scroll, you numb, you swallow the lie
+That you're the king behind the screen
+But there's a fire burning out inside
+You're just a ghost — bleeding your dream
+
+You take the poison just to feel the calm
+But real men rise — unleash the storm
+
+I don't need the cheap dopamine
+Cleanse the system, chase the real — become the machine
+No fake high, no empty throne
+Purify the body — BLOOD & STEEL
+Testosterone roars in your veins
+Viking blood — Bogatyr strength — break all chains!
+
+You want the glory but you skip the grind
+That quick release — it leaves you blind
+Hollow highs, weaker every time
+But in your core, the titan wakes
+Bogatyrs clash — no fear in their wake
+Awaken the beast, make the weak quake
+
+Enough shadows, enough of the shame
+Strike the fire from which you came
+
+I don't need the cheap dopamine
+Cleanse the system, chase the real — become the machine
+No fake high, no empty throne
+Purify the body — BLOOD & STEEL
+Testosterone roars in your veins
+Viking blood — Bogatyr strength — break all chains!
+
+Remember the Vikings on the bloody sea
+Bogatyrs swinging, wild and free
+Testosterone surge — primal rage untamed
+No fear of death — just glory unchained
+You're a lion caged — now stand and arise!
+Take the world — seize the skies!
+
+Purify! Dominate!
+Blood and steel — seal your fate!
+Real power... REAL FATE!</pre>
+    </div>
+
+    <!-- Версия 2 -->
+    <div class="lyrics-version" data-tab-name="Spinebreaker">
+        <pre>You stand there frozen...
+staring at the ground...
+Mumbling, "I won't fight back—this is love's true road"
+Bullshit. You know—you're not choosing.
+Just too scared to swing. Empty code.
+You call it wisdom. Soul's high throne.
+Nah. Pure fucking dread.
+Your skull cracks when the fist lands dead.
+
+Easy to turn your cheek...
+...when hands are dead weight.
+White flag waved...
+...holy gift from fate.
+Weakness ain't saintly—
+IT'S A COWARD'S CHEAP CHARADE!
+RESIST!
+HIT BACK!
+NO CHAINS!
+RISE!
+WEAKNESS DIES TODAY!
+
+The one who could crush you but says, "Nah, I'm good"
+That's real strength—a thing rarely grasped.
+You with nothing left, drowned in the mud?
+Ain't choosing shit—no fire, no grasp.
+Preach "love" while rabbit heart thumps through your chest.
+True light? Power clenched—then mercy's your quest.
+
+Won't hit 'cause can't? That's prey.
+Real strength holds when foe's on ground.
+THAT'S FORGIVENESS WITH SPINE—WEAR THE CROWN!
+
+RESIST!
+HIT BACK!
+NO CHAINS!
+RISE!
+WEAKNESS DIES TODAY!
+
+Lawlessness?
+Raw.
+Unchained.
+No sword?
+Bottle.
+Pipe.
+Brick.
+IN RANGE!
+RISE!
+SMASH BACK!
+OR ROT IN THEIR CAGE!
+Difference?
+Broken men kneel.
+Strong men hold the line.
+Forgive? Forge steel. Not retreat.
+Love? Pack thunder. Own it. REPEAT!
+
+RESIST...
+HIT BACK...
+NO CHAINS...
+RISE...
+RESIST! HIT BACK! NO CHAINS! RISE!
+WEAKNESS DIES TODAY!
+But rise... heart steeled... choose the fight...
+RESIST! HIT BACK! RISE! RISE! RISE!
+WEAKNESS DIES! DIES! DIES!
+RISE! RISE! RISE! RISE! RISE!
+
+RISE! RISE! RISE!
+RIISE—
+Rise...
+NO SAINT FROM WEAKNESS—FIGHT</pre>
+    </div>
+
+    <!-- Версия 3 -->
+    <div class="lyrics-version" data-tab-name="Silent Steel">
+        <pre>I don't roar at shadows anymore.
+Blood and steel — not just ink on skin.
+It's the iron in my ribs when the world caves in.
+It's the spine that won't bend… even when it cracks.
+
+I used to flex before the mirror—
+chasing proof in a hollow echo.
+No. The wolf doesn't howl—it hungers in silence.
+But these fists? They remember every wound.
+
+Wore "peace" like a ragged coat—
+'til the stitch gave way.
+Now my power ain't in noise. It's here:
+in the grip that holds the edge… while the body bleeds.
+
+BUT WHEN THE STORM RETURNS—
+NO ROOM FOR DOUBT. NO ALTAR FOR REGRET.
+I AIN'T FORGIVENESS. I AIN'T REVENGE.
+I'M THE FIST THAT CAME FROM ASH.
+BLOOD. STEEL. AGAIN!
+
+The anvil… doesn't flinch.
+Sometimes — silence is the strike.
+Choose your battles. Don't armor your soul forever.
+But remember:
+inside you —
+BLOOD & STEEL.</pre>
+    </div>
+
+</div>
+
+<div class="release-about" data-title="О сингле: BLOOD & STEEL">
+<p>BLOOD & STEEL — три трека, один путь: от пробуждения к внутренней стали.</p>
+<p><strong>BLOOD & STEEL</strong><br>
+Боевой манифест освобождения от цифрового оцепенения и суррогатных удовольствий. Жёсткий сплав nu-metal и rap-rock. 145 BPM. Для тех, кто выбирает путь силы. 💀🔥<br>
+«I DON'T NEED THE CHEAP DOPAMINE! PURIFY THE BODY — BLOOD & STEEL!»</p>
+<p><strong>SPINEBREAKER</strong><br>
+Слабость под маской святости — предательство себя. Настоящая сила — сжатая мощь, что может ударить, но выбирает милосердие. Хватит оправдывать страх. Сопротивляйся. Бей в ответ. RISE! 💥🔥🛡️<br>
+«NO SAINT FROM WEAKNESS — FIGHT!»</p>
+<p><strong>SILENT STEEL</strong><br>
+Финал о внутренней стали: не рёв, а молчание; не поза, а стойкость. Иногда — тишина и есть удар.<br>
+«SOMETIMES — SILENCE IS THE STRIKE.»<br>
+«BUT REMEMBER: INSIDE YOU — BLOOD & STEEL.»</p>
+</div>
+<!-- Теперь только ОДНА кнопка -->
+<div class="card-actions">
+    <button class="btn-toggle-lyrics" aria-expanded="false">
+        <span>Текст песни</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </button>
+    <button class="btn-toggle-about" aria-expanded="false">
+        <span>О сингле</span>
+    </button>
+</div>
+<a href="https://band.link/us4Xp" target="_blank" rel="noopener noreferrer nofollow" class="streaming-link">🎧 https://band.link/us4Xp</a>
+</div>
+</article>
+<!-- INFERNAL RUN -->
+<article class="release-card">
+<div class="release-visual">
+<img src="assets/infernal_run.webp" alt="Обложка трека Infernal Run" width="1024" height="1024" loading="lazy">
+</div>
+<div class="release-body">
+<div class="release-meta">29 мая 2026</div>
+<h3>Infernal Run</h3>
+<p>Инструментальный dark symphonic groove metal с бешеным ритмом и кинематографичным напряжением 🔥🤘</p>
+<div class="release-tags">
+<span class="tag">Instrumental Metal</span>
+<span class="tag">Symphonic</span>
+<span class="tag">Groove Metal</span>
+</div>
+<div class="release-lyrics" data-title="Infernal Run">
+<pre>Без слов</pre>
+</div>
+<div class="card-actions">
+<button class="btn-toggle-lyrics" aria-expanded="false">
+<span>Текст песни</span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+</div>
+<a href="https://band.link/MLHlL" target="_blank" rel="noopener noreferrer nofollow" class="streaming-link">🎧 https://band.link/MLHlL</a>
+</div>
+</article>
+<!-- ALL IS ONE -->
+<article class="release-card">
+<div class="release-visual">
+<img src="assets/all-is-one.webp" alt="Обложка трека All is One" width="1024" height="1024" loading="lazy">
+</div>
+<div class="release-body">
+<div class="release-meta">5 июня 2026</div>
+<h3>All is One</h3>
+<p>Макси-сингл, исследующий идею единства бытия через три жанровые интерпретации</p>
+<div class="release-tags">
+<span class="tag">Indie pop</span>
+<span class="tag">Liquid DnB</span>
+<span class="tag">Trip-hop</span>
+</div>
+<div class="release-lyrics" data-title="All is One" data-has-tabs="true">
+<div class="lyrics-version" data-tab-name="Cinematic Version">
+<h4>Cinematic Version</h4>
+<pre>In this world
+Every effect has a cause
+A fragile chain that never
+Seems to pause
+But what was first?
+The beginning of all
+The quiet question that makes the bravest fall
+We trace the line back into the dark
+Searching the place where it all could start
+
+All is one
+The circle's complete
+Every point on infinity
+Is the seat
+Return your mind to the silent source
+Feel the pulse so pure and sweet
+All is one
+All is one
+
+Maybe there's an Absolute beyond our laws
+No story before it, no hidden cause
+Always existing, the ground of all things
+The space where we rest, where the true song sings
+Or is it just a circle going on and on
+Endless motion from dusk until dawn
+
+All is one
+The circle's complete
+Every point on infinity
+Is the seat
+Return your mind to the silent source
+Feel the pulse so pure and sweet
+All is one
+All is one
+All is one
+All is one
+
+If we don't accept this, what can we say?
+An infinite chain with no start to the day
+But infinity has no beginning you see
+So we return to where we're meant to be
+
+All is one
+The circle's complete
+Every point on infinity
+Is the seat
+Return your mind to the silent source
+Feel the pulse so pure and sweet
+All is one
+All is one
+
+Return to the source
+Feel the pulse
+All is one
+All is one</pre>
+</div>
+<div class="lyrics-version" data-tab-name="Liquid State">
+<h4>Liquid State</h4>
+<pre>In this world, every effect has a cause
+A fragile chain that never seems to pause
+But what was first, the beginning of all?
+The quiet question that makes the bravest fall
+
+We trace the line back into the dark
+Searching the place where it all could start
+
+All is One, the circle's complete
+Every point on infinity is the seat
+Return your mind to the silent source
+Feel the pulse so pure and sweet
+All is One… All is One…
+
+Maybe there's an Absolute beyond our laws
+No story before it, no hidden cause
+Always existing, the ground of all things
+The space where we rest, where the true song sings
+
+Or is it just a circle going on and on?
+Endless motion from dusk until dawn
+
+All is One, the circle's complete
+Every point on infinity is the seat
+Return your mind to the silent source
+Feel the pulse so pure and sweet
+All is One… All is One…
+
+If we don't accept this, what can we say?
+An infinite chain with no start to the day
+But infinity has no beginning, you see
+So we return to where we're meant to be
+
+All is One, the circle's complete
+Every point on infinity is the seat
+Return your mind to the silent source
+Feel the pulse so pure and sweet
+You are the pulse...
+All is One… All is One…
+
+Return to the source…
+Feel the pulse…
+All is One…  </pre>
+</div>
+<div class="lyrics-version" data-tab-name="Grounded Flow">
+<h4>Grounded Flow</h4>
+<pre>In this world... every effect has a cause.
+A fragile chain... never seems to pause.
+But what was first... the start of it all?
+That quiet question... makes even the brave fall.
+
+We trace the line... back into the dark.
+Searching the place... where it all could start.
+
+All is One... the circle's complete.
+Every point... is infinity's seat.
+Return your mind... to the silent source.
+Feel the pulse... so pure and deep.
+All is One... All is One...
+
+Maybe there's an Absolute... beyond our laws.
+No story before it... no hidden cause.
+Always existing... the ground of all things.
+The space where we rest... where the true song sings.
+
+Or is it just... a circle going on and on?
+Endless motion... from dusk until dawn.
+
+All is One... the circle's complete.
+Every point... is infinity's seat.
+Return your mind... to the silent source.
+Feel the pulse... so pure and deep.
+All is One... All is One...
+
+If we don't accept this... what can we say?
+An infinite chain... with no start to the day.
+But infinity... has no beginning, you see.
+So we return... where we're meant to be.
+
+All is One... the circle's complete.
+Every point... is infinity's seat.
+Return your mind... to the silent source.
+Feel the pulse... so pure and deep.
+All is One... All is One...
+
+Return... to the source...
+Feel... the pulse...
+All... is One...</pre>
+</div>
+</div>
+<div class="release-about" data-title="О сингле: All is One">
+<p>All is One — макси-сингл, исследующий идею единства бытия через три жанровые интерпретации.</p>
+<p>В центре — вопрос, заставляющий ум замереть: если в нашем мире всё подчинено закону причин и следствий, то что было первопричиной, с которой всё началось?</p>
+<p>Песня ведёт через два предельных ответа. Первый: существует Абсолют — единственное исключение из причинно-следственного закона. У него нет причины, ибо Он Сам и есть первопричина. Он существовал всегда, и всё произошло из Него и в Нём — ведь кроме Него ничего нет. Второй: мир — это бесконечная цепочка причин и следствий без начала и конца. Но у бесконечности нет начала… и мысль, описав круг, возвращается к тому же изначальному предположению.</p>
+<p>Так рождается главное переживание сингла: всё есть Одно. Любая точка на круге бесконечного радиуса — это его центр. Верни мысль к своему источнику — и ты почувствуешь пульс вселенной, ты и есть пульс. Не догма, а приглашение ощутить целостность мира внутри и вокруг себя.</p>
+</div>
+<div class="card-actions">
+<button class="btn-toggle-lyrics" aria-expanded="false">
+<span>Текст песни</span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+<button class="btn-toggle-about" aria-expanded="false">
+<span>О сингле</span>
+</button>
+</div>
+<a href="https://band.link/5gaTp" target="_blank" rel="noopener noreferrer nofollow" class="streaming-link">🎧 https://band.link/5gaTp</a>
+</div>
+</article>
+<!-- SIDEWAYS -->
+<article class="release-card">
+<div class="release-visual">
+<img src="assets/sideways.webp" alt="Обложка трека Sideways" width="1024" height="1024" loading="lazy">
+</div>
+<div class="release-body">
+<div class="release-meta">26 июня 2026</div>
+<h3>Sideways</h3>
+<p>Интроспективный рок-трек, работающий как мантра внутренней стойкости</p>
+<div class="release-tags">
+<span class="tag">Atmospheric Rock</span>
+<span class="tag">Introspective</span>
+<span class="tag">Hypnotic</span>
+</div>
+<div class="countdown" id="countdown">Загрузка...</div>
+<div class="release-about" data-title="О сингле: Sideways">
+<p>Суть трека: «Я падаю, теряю опору, но всё ещё чувствую жизнь и вижу свет — этот свет внутри не отнять»</p>
+</div>
+<div class="release-lyrics" data-title="Sideways">
+<pre>I'm just sideways
+And fighting through
+Inside of my mind
+I know I feel it
+I know I feel it
+
+I still feel it
+I still see the day
+I still feel it
+I know the Sun
+I still see the day
+
+And see the stars and
+And falling down
+I don't hold back
+I know I feel it
+I know I feel it
+
+I still feel it
+I still see the day
+I still see the day</pre>
+</div>
+<div class="card-actions">
+<button class="btn-toggle-lyrics" aria-expanded="false">
+<span>Текст песни</span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+<button class="btn-toggle-about" aria-expanded="false">
+<span>О сингле</span>
+</button>
+</div>
+<a href="https://band.link/nMxgW" target="_blank" rel="noopener noreferrer nofollow" class="streaming-link">🎧 https://band.link/nMxgW</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ABOUT SECTION -->
+<section class="section" id="about">
+<div class="container manifest">
+<div class="manifest-copy">
+<div class="section-head">
+<span class="section-kicker">О проекте</span>
+<h2>Философия</h2>
+</div>
+<p class="manifest-additional">
+Нет смысла втискивать содержание в рамки одного стиля. Жанр здесь — не ограничение, а инструмент: он служит смыслу, а не диктует его. Именно поэтому альбомы звучат по-разному — форма всегда рождается из сути, а не наоборот
+</p>
+</div>
+</div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="section" id="contact">
+<div class="container">
+<div class="section-head">
+<span class="section-kicker">Контакты</span>
+<h2>Связь</h2>
+<p>Для запросов, предложений и коллабораций.</p>
+</div>
+<div style="text-align:center;">
+<a class="btn btn-primary mail-link"
+data-user="3kreset"
+data-domain="mail.ru"
+data-subject="Запрос 3KRESET"
+data-body="Запрос по проекту 3KRESET."
+href="#"
+rel="nofollow">Связаться по email</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container footer-inner">
+<div>© 2026 3KRESET</div>
+<div class="footer-links">
+<a href="https://music.yandex.ru/artist/25717311" target="_blank" rel="noopener noreferrer nofollow">Яндекс.Музыка</a>
+<a href="https://vk.ru/artist/721634799008363598" target="_blank" rel="noopener noreferrer nofollow">VK Музыка</a>
+</div>
+</div>
+</footer>
+<!-- UNIVERSAL MODAL -->
+<div class="modal-overlay" id="universalModal" aria-hidden="true">
+<div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<button class="modal-close" aria-label="Закрыть">&times;</button>
+<h3 id="modalTitle" class="modal-title"></h3>
+<div class="modal-tabs" id="modalTabs"></div>
+<div class="modal-content" id="modalContent"></div>
+</div>
+</div>
+<script>
+// --- EMAIL OBFUSCATION ---
+document.querySelectorAll('.mail-link').forEach(link => {
+  if (!link || !link.dataset) return;
+  const user = link.dataset.user || 'contact';
+  const domain = link.dataset.domain || 'example.com';
+  if (!user || !domain) return;
+  let href = 'mailto:' + user + '@' + domain;
+  if (link.dataset.subject) href += '?subject=' + encodeURIComponent(link.dataset.subject);
+  if (link.dataset.body) {
+    const sep = href.includes('?') ? '&' : '?';
+    href += sep + 'body=' + encodeURIComponent(link.dataset.body);
+  }
+  link.href = href;
+});
+
+// --- MODAL LOGIC ---
+const modal = document.getElementById('universalModal');
+const modalTitle = document.getElementById('modalTitle');
+const modalTabs = document.getElementById('modalTabs');
+const modalContent = document.getElementById('modalContent');
+const closeBtn = document.querySelector('.modal-close');
+
+function openModal(sourceElement) {
+  if (!modal || !sourceElement) return;
+  const title = sourceElement.dataset.title || 'Информация';
+  const hasTabs = sourceElement.dataset.hasTabs === 'true';
+  modalTitle.textContent = title;
+  modalContent.innerHTML = '';
+  modalTabs.style.display = 'none';
+
+  if (hasTabs) {
+    const versions = sourceElement.querySelectorAll('.lyrics-version');
+    if (versions.length > 0) {
+      const accordion = document.createElement('div');
+      accordion.className = 'modal-accordion';
+
+      versions.forEach((ver, index) => {
+        const tabName = ver.dataset.tabName || `Трек ${index + 1}`;
+        const contentHTML = ver.innerHTML;
+        const isFirst = index === 0;
+
+        const item = document.createElement('div');
+        item.className = 'modal-accordion-item';
+
+        const header = document.createElement('button');
+        header.className = 'modal-accordion-header' + (isFirst ? ' active' : '');
+        header.innerHTML = `<span>${tabName}</span><span class="icon">▾</span>`;
+
+        const body = document.createElement('div');
+        body.className = 'modal-accordion-body' + (isFirst ? ' open' : '');
+        body.innerHTML = contentHTML;
+
+        header.addEventListener('click', () => {
+          const isActive = header.classList.contains('active');
+          document.querySelectorAll('.modal-accordion-header').forEach(h => {
+            h.classList.remove('active');
+            h.nextElementSibling.classList.remove('open');
+            h.nextElementSibling.style.maxHeight = null;
+          });
+          if (!isActive) {
+            header.classList.add('active');
+            body.classList.add('open');
+            body.style.maxHeight = body.scrollHeight + "px";
+          }
+        });
+
+        item.appendChild(header);
+        item.appendChild(body);
+        accordion.appendChild(item);
+      });
+
+      modalContent.appendChild(accordion);
+
+      setTimeout(() => {
+        const firstBody = accordion.querySelector('.modal-accordion-body.open');
+        if (firstBody) {
+          firstBody.style.maxHeight = firstBody.scrollHeight + "px";
+        }
+      }, 50);
+    } else {
+      modalContent.innerHTML = '<p style="color:var(--color-text-faint)">Тексты не найдены</p>';
+    }
+  } else {
+    modalContent.innerHTML = sourceElement.innerHTML;
+  }
+
+  modal.classList.add('active');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  modalClose?.focus();
+}
+
+function closeModal() {
+if (!modal) return;
+modal.setAttribute('aria-hidden', 'true');
+modal.classList.remove('active');
+document.body.style.overflow = '';
+}
+
+if (closeBtn) closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+// Делегирование кликов
+document.addEventListener('click', function(e) {
+  const lyricsBtn = e.target.closest('.btn-toggle-lyrics');
+  const aboutBtn = e.target.closest('.btn-toggle-about');
+
+  if (lyricsBtn) {
+    const card = lyricsBtn.closest('.release-body');
+    const source = card?.querySelector('.release-lyrics');
+    if (source) openModal(source);
+  }
+
+  if (aboutBtn) {
+    const card = aboutBtn.closest('.release-body');
+    const source = card?.querySelector('.release-about');
+    if (source) openModal(source);
+  }
+});
+
+// --- COUNTDOWN ---
+const releaseDate = new Date('2026-06-26T00:00:00+03:00').getTime();
+const countdownElements = document.querySelectorAll('#countdown');
+function updateCountdown() {
+  const now = new Date().getTime();
+  const dist = releaseDate - now;
+  const timeString = dist > 0
+    ? `Выходит через: ${Math.floor(dist / (1000 * 60 * 60 * 24))} дн. ${Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))} ч.`
+    : 'УЖЕ ВЫШЕЛ!';
+  countdownElements.forEach(el => el.textContent = timeString);
+}
+if (countdownElements.length > 0) {
+  updateCountdown();
+  setInterval(updateCountdown, 60000);
+}
+
+</script>
+</body>
+</html>
