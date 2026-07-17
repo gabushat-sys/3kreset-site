@@ -2,6 +2,14 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
+<!-- Безопасность, SEO и микро-улучшения -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://mc.yandex.ru; script-src 'self' 'unsafe-inline' https://mc.yandex.ru; connect-src 'self' https://mc.yandex.ru;">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://3kreset.com/">
+<meta name="theme-color" content="#090909">
+<meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- ЗАЩИТА ОТ КЕША -->
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -19,19 +27,13 @@
 <meta property="og:image" content="https://3kreset.com/assets/sideways.webp">
 <meta property="og:site_name" content="3KRESET">
 <meta property="og:locale" content="ru_RU">
-<meta name="theme-color" content="#090909">
-<!-- Безопасность (CSP обновлен для Яндекс.Метрики) -->
-<meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://3kreset.com/">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'unsafe-inline' fonts.googleapis.com; font-src fonts.gstatic.com; img-src 'self' data: https://mc.yandex.ru; script-src 'unsafe-inline' 'self' https://mc.yandex.ru; connect-src 'self' https://mc.yandex.ru;">
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
 (function(m,e,t,r,i,k,a){
@@ -49,52 +51,62 @@ ym(108830788, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLa
 {
   "@context": "https://schema.org",
   "@type": "MusicGroup",
+  "@id": "https://3kreset.com/#3kreset",
   "name": "3KRESET",
   "url": "https://3kreset.com",
   "description": "Музыкальный проект, где содержание выбирает форму. Жанр — лишь следствие.",
   "genre": ["Nu-metal", "Rap-rock", "Atmospheric Rock", "Groove Metal", "Indie pop", "Liquid DnB", "Trip-hop"],
   "image": "https://3kreset.com/assets/blood-steel.webp",
-  "album": [
-    {
-      "@type": "MusicAlbum",
-      "name": "3K TO DEATH",
-      "datePublished": "2026-04-08",
-      "genre": ["Nu-metal", "Rap-rock"]
-    },
-    {
-      "@type": "MusicAlbum",
-      "name": "BLOOD & STEEL",
-      "datePublished": "2026-05-01",
-      "genre": ["Nu-metal", "Rap-rock", "Motivational"]
-    },
-    {
-      "@type": "MusicAlbum",
-      "name": "Infernal Run",
-      "datePublished": "2026-05-29",
-      "genre": ["Instrumental Metal", "Symphonic", "Groove Metal"]
-    },
-    {
-      "@type": "MusicAlbum",
-      "name": "All is One",
-      "datePublished": "2026-06-05",
-      "genre": ["Indie pop", "Liquid DnB", "Trip-hop"]
-    }
-  ],
-  "track": [
-    {
-      "@type": "MusicRecording",
-      "name": "Sideways",
-      "datePublished": "2026-06-26",
-      "genre": "Atmospheric Rock",
-      "inAlbum": {
-        "@type": "MusicAlbum",
-        "name": "Sideways"
-      }
-    }
-  ],
   "sameAs": [
     "https://music.yandex.ru/artist/25717311",
     "https://vk.ru/artist/721634799008363598"
+  ],
+  "album": [
+    {
+      "@type": "MusicRelease",
+      "@id": "https://3kreset.com/#release-sideways",
+      "name": "Sideways",
+      "releaseType": "Single",
+      "datePublished": "2026-06-26",
+      "url": "https://3kreset.com/#sideways",
+      "image": "https://3kreset.com/assets/sideways.webp"
+    },
+    {
+      "@type": "MusicRelease",
+      "@id": "https://3kreset.com/#release-3k-to-death",
+      "name": "3K TO DEATH",
+      "releaseType": "Single",
+      "datePublished": "2026-04-08",
+      "url": "https://3kreset.com/#3k-to-death",
+      "image": "https://3kreset.com/assets/3k_to_death.webp"
+    },
+    {
+      "@type": "MusicRelease",
+      "@id": "https://3kreset.com/#release-blood-steel",
+      "name": "BLOOD & STEEL",
+      "releaseType": "EP",
+      "datePublished": "2026-05-01",
+      "url": "https://3kreset.com/#blood-steel",
+      "image": "https://3kreset.com/assets/blood-steel.webp"
+    },
+    {
+      "@type": "MusicRelease",
+      "@id": "https://3kreset.com/#release-infernal-run",
+      "name": "Infernal Run",
+      "releaseType": "Single",
+      "datePublished": "2026-05-29",
+      "url": "https://3kreset.com/#infernal-run",
+      "image": "https://3kreset.com/assets/infernal_run.webp"
+    },
+    {
+      "@type": "MusicRelease",
+      "@id": "https://3kreset.com/#release-all-is-one",
+      "name": "All is One",
+      "releaseType": "EP",
+      "datePublished": "2026-06-05",
+      "url": "https://3kreset.com/#all-is-one",
+      "image": "https://3kreset.com/assets/all-is-one.webp"
+    }
   ]
 }
 </script>
@@ -108,6 +120,11 @@ ym(108830788, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLa
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 <style>
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #090909 !important;
+}
 :root {
 --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
 --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
@@ -197,9 +214,8 @@ margin: 0;
 .logo-mark { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.14); display: grid; place-items: center; color: var(--color-primary); box-shadow: inset 0 0 24px rgba(255,90,31,0.12); }
 .logo-img { height: 34px; width: auto; display: block; background-color: #0a0a0a !important; }
 @media (max-width: 720px) {
-  .logo-img {
-    height: 26px;
-  }
+.hero { min-height: auto; overflow: visible; }
+.hero-grid { padding-top: 6.5rem; }
 }
 @media (max-width: 768px) {
   .logo-subtitle {
@@ -524,7 +540,7 @@ html { scroll-padding-top: 100px; }
 <a class="skip-link" href="#main">Перейти к контенту</a>
 <header class="site-header">
 <div class="container header-inner">
-<a href="#top" class="header-left" aria-label="Наверх">
+<a href="#top" class="header-left" aria-label="3KRESET — На главную">
   <span class="logo-text">3KRESET</span>
   <span class="tagline">Содержание выбирает форму. Жанр — лишь следствие</span>
 </a>
@@ -548,8 +564,6 @@ html { scroll-padding-top: 100px; }
 <a href="#releases" class="btn btn-secondary">Все релизы</a>
 </div>
 </div>
-<aside class="hero-side">
-</aside>
 </div>
 </section>
 <!-- RELEASES SECTION -->
@@ -564,7 +578,7 @@ html { scroll-padding-top: 100px; }
 <!-- 3K TO DEATH -->
 <article class="release-card">
 <div class="release-visual">
-<img src="assets/3k_to_death.webp" alt="Обложка альбома 3K TO DEATH" width="1024" height="1024" loading="lazy">
+<img src="assets/3k_to_death.webp" alt="Обложка альбома 3K TO DEATH" width="1024" height="1024" loading="lazy" decoding="async">
 </div>
 <div class="release-body">
 <div class="release-meta">8 апреля 2026</div>
@@ -660,7 +674,7 @@ RUN!
 ...I'm alive…</pre>
 </div>
 <div class="card-actions">
-<button class="btn-toggle-lyrics" aria-expanded="false">
+<button class="btn-toggle-lyrics" aria-expanded="false" aria-label="Открыть текст песни">
 <span>Текст песни</span>
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
@@ -671,7 +685,7 @@ RUN!
 <!-- BLOOD & STEEL -->
 <article class="release-card">
 <div class="release-visual">
-<img src="assets/blood-steel.webp" alt="Обложка альбома BLOOD & STEEL" width="1024" height="1024" loading="lazy">
+<img src="assets/blood-steel.webp" alt="Обложка альбома BLOOD & STEEL" width="1024" height="1024" loading="lazy" decoding="async">
 </div>
 <div class="release-body">
 <div class="release-meta">1 мая 2026</div>
@@ -855,11 +869,11 @@ BLOOD & STEEL.</pre>
 </div>
 <!-- Теперь только ОДНА кнопка -->
 <div class="card-actions">
-    <button class="btn-toggle-lyrics" aria-expanded="false">
+    <button class="btn-toggle-lyrics" aria-expanded="false" aria-label="Открыть текст песни">
         <span>Текст песни</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
     </button>
-    <button class="btn-toggle-about" aria-expanded="false">
+    <button class="btn-toggle-about" aria-expanded="false" aria-label="Подробнее о сингле">
         <span>О сингле</span>
     </button>
 </div>
@@ -869,7 +883,7 @@ BLOOD & STEEL.</pre>
 <!-- INFERNAL RUN -->
 <article class="release-card">
 <div class="release-visual">
-<img src="assets/infernal_run.webp" alt="Обложка трека Infernal Run" width="1024" height="1024" loading="lazy">
+<img src="assets/infernal_run.webp" alt="Обложка трека Infernal Run" width="1024" height="1024" loading="lazy" decoding="async">
 </div>
 <div class="release-body">
 <div class="release-meta">29 мая 2026</div>
@@ -884,7 +898,7 @@ BLOOD & STEEL.</pre>
 <pre>Без слов</pre>
 </div>
 <div class="card-actions">
-<button class="btn-toggle-lyrics" aria-expanded="false">
+<button class="btn-toggle-lyrics" aria-expanded="false" aria-label="Открыть текст песни">
 <span>Текст песни</span>
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
@@ -895,7 +909,7 @@ BLOOD & STEEL.</pre>
 <!-- ALL IS ONE -->
 <article class="release-card">
 <div class="release-visual">
-<img src="assets/all-is-one.webp" alt="Обложка трека All is One" width="1024" height="1024" loading="lazy">
+<img src="assets/all-is-one.webp" alt="Обложка трека All is One" width="1024" height="1024" loading="lazy" decoding="async">
 </div>
 <div class="release-body">
 <div class="release-meta">5 июня 2026</div>
@@ -1064,13 +1078,13 @@ All... is One...</pre>
 <p>Так рождается главное переживание сингла: всё есть Одно. Любая точка на круге бесконечного радиуса — это его центр. Верни мысль к своему источнику — и ты почувствуешь пульс вселенной, ты и есть пульс. Не догма, а приглашение ощутить целостность мира внутри и вокруг себя.</p>
 </div>
 <div class="card-actions">
-<button class="btn-toggle-lyrics" aria-expanded="false">
+<button class="btn-toggle-lyrics" aria-expanded="false" aria-label="Открыть текст песни">
 <span>Текст песни</span>
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
-<button class="btn-toggle-about" aria-expanded="false">
-<span>О сингле</span>
-</button>
+    <button class="btn-toggle-about" aria-expanded="false" aria-label="Подробнее о сингле">
+        <span>О сингле</span>
+    </button>
 </div>
 <a href="https://band.link/5gaTp" target="_blank" rel="noopener noreferrer nofollow" class="streaming-link">🎧 https://band.link/5gaTp</a>
 </div>
@@ -1078,7 +1092,7 @@ All... is One...</pre>
 <!-- SIDEWAYS -->
 <article class="release-card">
 <div class="release-visual">
-<img src="assets/sideways.webp" alt="Обложка трека Sideways" width="1024" height="1024" loading="lazy">
+<img src="assets/sideways.webp" alt="Обложка трека Sideways" width="1024" height="1024" loading="lazy" decoding="async" fetchpriority="high">
 </div>
 <div class="release-body">
 <div class="release-meta">26 июня 2026</div>
@@ -1117,11 +1131,11 @@ I still see the day
 I still see the day</pre>
 </div>
 <div class="card-actions">
-<button class="btn-toggle-lyrics" aria-expanded="false">
+<button class="btn-toggle-lyrics" aria-expanded="false" aria-label="Открыть текст песни">
 <span>Текст песни</span>
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
-<button class="btn-toggle-about" aria-expanded="false">
+<button class="btn-toggle-about" aria-expanded="false" aria-label="Подробнее о сингле">
 <span>О сингле</span>
 </button>
 </div>
@@ -1169,8 +1183,8 @@ rel="nofollow">Связаться по email</a>
 <div class="container footer-inner">
 <div>© 2026 3KRESET</div>
 <div class="footer-links">
-<a href="https://music.yandex.ru/artist/25717311" target="_blank" rel="noopener noreferrer nofollow">Яндекс.Музыка</a>
-<a href="https://vk.ru/artist/721634799008363598" target="_blank" rel="noopener noreferrer nofollow">VK Музыка</a>
+<a href="https://music.yandex.ru/artist/25717311" target="_blank" rel="noopener noreferrer nofollow" title="Яндекс.Музыка">Яндекс.Музыка</a>
+<a href="https://vk.ru/artist/721634799008363598" target="_blank" rel="noopener noreferrer nofollow" title="VK Музыка">VK Музыка</a>
 </div>
 </div>
 </footer>
@@ -1305,21 +1319,28 @@ document.addEventListener('click', function(e) {
   }
 });
 
-// --- COUNTDOWN ---
-const releaseDate = new Date('2026-06-26T00:00:00+03:00').getTime();
-const countdownElements = document.querySelectorAll('#countdown');
-function updateCountdown() {
-  const now = new Date().getTime();
-  const dist = releaseDate - now;
-  const timeString = dist > 0
-    ? `Выходит через: ${Math.floor(dist / (1000 * 60 * 60 * 24))} дн. ${Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))} ч.`
-    : 'УЖЕ ВЫШЕЛ!';
-  countdownElements.forEach(el => el.textContent = timeString);
-}
-if (countdownElements.length > 0) {
-  updateCountdown();
-  setInterval(updateCountdown, 60000);
-}
+    // --- COUNTDOWN ---
+    const releaseDate = new Date('2026-06-26T00:00:00+03:00').getTime();
+    const countdownEl = document.getElementById('countdown');
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const dist = releaseDate - now;
+      const days = Math.floor(dist / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const timeString = dist > 0
+        ? `Выходит через: ${days} дн. ${hours} ч.`
+        : 'УЖЕ ВЫШЕЛ!';
+
+      if (countdownEl) {
+        countdownEl.textContent = timeString;
+      }
+    }
+
+    if (countdownEl) {
+      updateCountdown();
+      setInterval(updateCountdown, 60000);
+    }
 
 </script>
 <script>
